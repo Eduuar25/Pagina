@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonido Express - Alquiler de Sonido Profesional</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="CHICHI TURBO — Alquiler de sonido profesional para bodas, fiestas y eventos. Equipos modernos, instalación incluida y soporte técnico 24/7 en toda la región.">
+    <meta name="theme-color" content="#120738">
+    <title>CHICHI TURBO — Alquiler de Sonido Profesional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido</a>
+
     <div class="topbar">
-        <p>Disponible 24/7 para tus eventos | Llámanos: <strong>+57 302 272 0818</strong></p>
+        <p>
+            Disponible 24/7 para tus eventos |
+            <a href="tel:+573022720818">+57 302 272 0818</a> |
+            <a href="https://wa.me/573022720818?text=Hola%20CHICHI%20TURBO%2C%20quiero%20cotizar%20un%20evento" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </p>
+    </div>
 
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <div class="logo">CHICHI TURBO</div>
-            <div class="menu">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="menu" id="menu-principal">
                 <a href="#paquetes">Paquetes</a>
                 <a href="#galeria">Galería</a>
                 <a href="#video">Video</a>
@@ -22,21 +39,21 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contenido-principal">
         <section class="hero">
-            <div class="hero-copy">
+            <div class="hero-copy reveal">
                 <span class="eyebrow">Audio profesional para tu evento</span>
                 <h1>Convierte tu celebración en una experiencia inolvidable</h1>
                 <p>Contamos con equipos modernos, técnicos especializados y servicios completos para que la música se escuche impecable en cada rincón.</p>
                 <div class="hero-actions">
                     <a href="#contacto" class="btn btn-primary">Reserva tu fecha</a>
-                    <a href="#galeria" class="btn btn-secondary">Ver nuestro trabajo</a>
+                    <a href="https://wa.me/573022720818?text=Hola%20CHICHI%20TURBO%2C%20quiero%20cotizar%20un%20evento" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
                 </div>
 
                 <div class="hero-badges">
-                    <span>✔ Montaje rápido</span>
-                    <span>✔ Sonido crystal clear</span>
-                    <span>✔ Soporte técnico en el sitio</span>
+                    <span>Montaje rápido</span>
+                    <span>Sonido crystal clear</span>
+                    <span>Soporte técnico en el sitio</span>
                 </div>
 
                 <div class="hero-stats">
@@ -55,10 +72,10 @@
                 </div>
             </div>
 
-            <div class="hero-media">
+            <div class="hero-media reveal">
                 <div class="hero-card">
                     <div class="hero-overlay"></div>
-                    <img src="hero.jpg" alt="Equipo de sonido profesional">
+                    <img src="imagenes/hero.jpg" alt="Equipo de sonido profesional montado en un evento" loading="eager" width="620" height="420">
                     <div class="hero-card-info">
                         <h3>Servicio completo</h3>
                         <p>Altavoces, micrófonos, mesas y luces para todo tipo de evento.</p>
@@ -68,28 +85,28 @@
         </section>
 
         <section class="features-section">
-            <div class="section-intro center">
+            <div class="section-intro center reveal">
                 <span class="eyebrow">Lo que ofrecemos</span>
                 <h2>Todo lo que necesitas para el mejor ambiente</h2>
             </div>
             <div class="feature-grid">
-                <article class="feature-card">
-                    <div class="icon">🔊</div>
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">🔊</div>
                     <h3>Sonido potente</h3>
                     <p>Equipos profesionales para sonar claro en interiores y exteriores.</p>
                 </article>
-                <article class="feature-card">
-                    <div class="icon">🎤</div>
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">🎤</div>
                     <h3>Micrófonos premium</h3>
                     <p>Modelos inalámbricos y con cable para presentaciones y shows.</p>
                 </article>
-                <article class="feature-card">
-                    <div class="icon">💡</div>
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">💡</div>
                     <h3>Luces y ambiente</h3>
                     <p>Iluminación básica incluida para crear una atmósfera profesional.</p>
                 </article>
-                <article class="feature-card">
-                    <div class="icon">🧑‍🔧</div>
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">🧑‍🔧</div>
                     <h3>Soporte técnico</h3>
                     <p>Instalación y supervisión durante todo el evento.</p>
                 </article>
@@ -97,13 +114,13 @@
         </section>
 
         <section id="paquetes" class="highlight-section">
-            <div class="section-intro">
+            <div class="section-intro reveal">
                 <span class="eyebrow">Nuestros paquetes</span>
                 <h2>Elige el plan ideal para tu celebración</h2>
                 <p>Opciones diseñadas para eventos pequeños, medianos y grandes, con flexibilidad según tus necesidades.</p>
             </div>
             <div class="grid cards-grid">
-                <article class="beneficio card card-premium">
+                <article class="beneficio card card-premium reveal">
                     <div class="card-top">Más Deseado</div>
                     <h3>Paquete Básico</h3>
                     <p>Ideal para reuniones privadas y fiestas reducidas.</p>
@@ -113,8 +130,9 @@
                         <li>1 micrófono</li>
                         <li>Instalación incluida</li>
                     </ul>
+                    <a href="https://wa.me/573022720818?text=Hola%2C%20me%20interesa%20el%20Paquete%20B%C3%A1sico" class="btn btn-primary btn-card" target="_blank" rel="noopener noreferrer">Cotizar paquete</a>
                 </article>
-                <article class="beneficio card">
+                <article class="beneficio card reveal">
                     <h3>Paquete Intermedio</h3>
                     <p>Mayor potencia para eventos medianos y celebraciones especiales.</p>
                     <strong>Desde $550.000 COP (≈ US$122)</strong>
@@ -123,8 +141,9 @@
                         <li>2 micrófonos inalámbricos</li>
                         <li>Iluminación básica</li>
                     </ul>
+                    <a href="https://wa.me/573022720818?text=Hola%2C%20me%20interesa%20el%20Paquete%20Intermedio" class="btn btn-secondary btn-card" target="_blank" rel="noopener noreferrer">Cotizar paquete</a>
                 </article>
-                <article class="beneficio card">
+                <article class="beneficio card reveal">
                     <h3>Paquete Premium</h3>
                     <p>Montajes completos para bodas, conciertos y grandes eventos.</p>
                     <strong>Desde $650.000 COP (≈ US$144)</strong>
@@ -133,74 +152,72 @@
                         <li>Monitores de escenario</li>
                         <li>Soporte técnico dedicado</li>
                     </ul>
+                    <a href="https://wa.me/573022720818?text=Hola%2C%20me%20interesa%20el%20Paquete%20Premium" class="btn btn-secondary btn-card" target="_blank" rel="noopener noreferrer">Cotizar paquete</a>
                 </article>
             </div>
         </section>
 
         <section id="galeria" class="gallery-section">
-            <div class="section-intro">
+            <div class="section-intro reveal">
                 <span class="eyebrow">Galería</span>
-                <h2>Los mejores momentos con nuestro sonido</h2>
+                <h2>Los mejores momentos con nuestro sonido 360</h2>
                 <p>Vistas reales de eventos donde la calidad del audio marcó la diferencia.</p>
             </div>
             <div class="gallery-layout">
-                <div class="gallery-large">
-                    <img src="image2.jpeg" alt="Concierto en vivo">
+                <div class="gallery-large reveal">
+                    <img src="imagenes/image2.jpeg" alt="Concierto en vivo con equipo de sonido CHICHI TURBO" loading="lazy" width="1200" height="620">
+                </div>
+                <div class="gallery-small-grid reveal">
+                    <img src="imagenes/hero.jpg" alt="Representación de sonido 360" loading="lazy" width="1200" height="620">
                 </div>
             </div>
         </section>
 
         <section id="video" class="video-section">
-            <div class="section-intro center">
+            <div class="section-intro center reveal">
                 <span class="eyebrow">Video</span>
                 <h2>Observa nuestro montaje en acción</h2>
                 <p>Desde la instalación hasta la prueba de sonido, así trabajamos para garantizar calidad.</p>
             </div>
             <div class="video-grid">
-                <article class="video-card">
+                <article class="video-card reveal">
                     <div class="video-card-header">
                         <span>Video 1</span>
                         <h3>Montaje en vivo</h3>
                     </div>
                     <div class="video-wrapper">
-                        <video muted controls playsinline preload="metadata" poster="image2.jpeg" onmouseenter="this.play()" onmouseleave="this.pause()">
-                            <source src="video.mp4" type="video/mp4">
-                            Tu navegador no soporta video HTML5. <a href="video.mp4">Descargar video</a>
-                        </video>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" title="Montaje en vivo CHICHI TURBO" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </article>
-                <article class="video-card">
+                <article class="video-card reveal">
                     <div class="video-card-header">
                         <span>Video 2</span>
                         <h3>Sonido en evento real</h3>
                     </div>
                     <div class="video-wrapper">
-                        <video muted controls playsinline preload="metadata" poster="image2.jpeg" onmouseenter="this.play()" onmouseleave="this.pause()">
-                            <source src="video2.mp4" type="video/mp4">
-                            Tu navegador no soporta video HTML5. <a href="video2.mp4">Descargar video 2</a>
-                        </video>
+                        <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4?rel=0" title="Sonido en evento real CHICHI TURBO" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </article>
             </div>
         </section>
 
         <section class="testimonial-section">
-            <div class="section-intro">
+            <div class="section-intro reveal">
                 <span class="eyebrow">Testimonios</span>
                 <h2>Lo que dicen nuestros clientes</h2>
             </div>
             <div class="grid testimonials-grid">
-                <div class="testimonial card">
+                <div class="testimonial card reveal">
                     <p>"El sonido fue excelente, el equipo llegó temprano y todo funcionó perfecto. Recomendados 100%."</p>
                     <strong>Laura G.</strong>
                     <span>Boda en Bogotá</span>
                 </div>
-                <div class="testimonial card">
+                <div class="testimonial card reveal">
                     <p>"Su apoyo técnico durante el evento fue clave. El audio se escuchó impecable desde todos los rincones."</p>
                     <strong>Carlos M.</strong>
                     <span>Evento empresarial</span>
                 </div>
-                <div class="testimonial card">
+                <div class="testimonial card reveal">
                     <p>"Servicio profesional y atención cercana. Fue la mejor apuesta para nuestra fiesta."</p>
                     <strong>Andrea R.</strong>
                     <span>Cumpleaños</span>
@@ -209,24 +226,27 @@
         </section>
 
         <section class="cta-section">
-            <div class="cta-card">
-                <span class="eyebrow">¿Listo para el mejor sonido?</span>
-                <h2>Planifica hoy tu evento y recibe una propuesta personalizada</h2>
+            <div class="cta-card reveal">
+                <div>
+                    <span class="eyebrow">¿Listo para el mejor sonido?</span>
+                    <h2>Planifica hoy tu evento y recibe una propuesta personalizada</h2>
+                </div>
                 <a href="#contacto" class="btn btn-primary btn-large">Contáctanos ahora</a>
             </div>
         </section>
 
         <section id="contacto" class="contact-section">
-            <div class="section-intro">
+            <div class="section-intro reveal">
                 <span class="eyebrow">Contacto</span>
                 <h2>Hablemos de tu evento</h2>
                 <p>Déjanos los detalles y te responderemos con la mejor opción para tu celebración.</p>
             </div>
             <div class="grid contact-grid">
-                <div class="card contact-card">
+                <div class="card contact-card reveal">
                     <h3>Información de contacto</h3>
-                    <p><strong>Correo:</strong> eduardocogollo04@gmail.com</p>
-                    <p><strong>Teléfono:</strong> +57 302 272 0818</p>
+                    <p><strong>Correo:</strong> <a href="mailto:eduardocogollo04@gmail.com">eduardocogollo04@gmail.com</a></p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+573022720818">+57 302 272 0818</a></p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/573022720818" target="_blank" rel="noopener noreferrer">Enviar mensaje</a></p>
                     <p>Atendemos tus dudas rápido y confirmamos disponibilidad en pocas horas.</p>
                     <div class="contact-highlights">
                         <span>Instalación incluida</span>
@@ -234,13 +254,17 @@
                         <span>Soporte técnico</span>
                     </div>
                 </div>
-                <div class="card contact-card">
-                    <form action="mailto:eduardocogollo04@gmail.com" method="post" enctype="text/plain">
-                        <input type="text" name="Nombre" placeholder="Tu nombre" required>
-                        <input type="email" name="Email" placeholder="Tu correo" required>
-                        <input type="text" name="Evento" placeholder="Tipo de evento" required>
-                        <textarea name="Mensaje" rows="5" placeholder="Cuéntanos sobre tu fecha, lugar y necesidades" required></textarea>
-                        <button type="submit">Enviar solicitud</button>
+                <div class="card contact-card reveal">
+                    <form id="contact-form" novalidate>
+                        <label class="sr-only" for="nombre">Tu nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+                        <label class="sr-only" for="email">Tu correo</label>
+                        <input type="email" id="email" name="email" placeholder="Tu correo" required autocomplete="email">
+                        <label class="sr-only" for="evento">Tipo de evento</label>
+                        <input type="text" id="evento" name="evento" placeholder="Tipo de evento" required>
+                        <label class="sr-only" for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu fecha, lugar y necesidades" required></textarea>
+                        <button type="submit">Enviar por WhatsApp</button>
                     </form>
                 </div>
             </div>
@@ -249,9 +273,18 @@
 
     <footer>
         <div class="footer-content">
-            <p>© 2026 Sonido Express. Tu evento merece sonar mejor.</p>
+            <p>© 2026 CHICHI TURBO. Tu evento merece sonar mejor.</p>
             <p class="footer-note">Gestión profesional de sonido, iluminación y montaje en toda la región.</p>
         </div>
     </footer>
+
+    <a href="https://wa.me/573022720818?text=Hola%20CHICHI%20TURBO%2C%20quiero%20cotizar%20un%20evento" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .917.917l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.37l-.36-.214-2.642.886.886-2.575-.234-.375A9.818 9.818 0 1 1 12 21.818z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
