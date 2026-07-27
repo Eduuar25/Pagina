@@ -1,0 +1,43 @@
+{
+  "paquetes": [
+    {
+      "id": 1,
+      "nombre": "Paquete Básico",
+      "descripcion": "Ideal para reuniones privadas y fiestas reducidas.",
+      "precio": 450000,
+      "precioUsd": 100,
+      "beneficios": [
+        "Bocinas compactas",
+        "1 micrófono",
+        "Instalación incluida"
+      ],
+      "destacado": true
+    },
+    {
+      "id": 2,
+      "nombre": "Paquete Intermedio",
+      "descripcion": "Mayor potencia para eventos medianos y celebraciones especiales.",
+      "precio": 550000,
+      "precioUsd": 122,
+      "beneficios": [
+        "Bocinas profesionales",
+        "2 micrófonos inalámbricos",
+        "Iluminación básica"
+      ],
+      "destacado": false
+    },
+    {
+      "id": 3,
+      "nombre": "Paquete Premium",
+      "descripcion": "Montajes completos para bodas, conciertos y grandes eventos.",
+      "precio": 650000,
+      "precioUsd": 144,
+      "beneficios": [
+        "Sistema de sonido completo",
+        "Monitores de escenario",
+        "Soporte técnico dedicado"
+      ],
+      "destacado": false
+    }
+  ]
+}
