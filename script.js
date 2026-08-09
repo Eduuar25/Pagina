@@ -5,56 +5,6 @@
     var menu = document.querySelector('.menu');
     var contactForm = document.getElementById('contact-form');
     var whatsappNumber = '573022720818';
-    var STORAGE_KEY = 'chichi_turbo_clientes';
-
-    function getClientes() {
-        try {
-            return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-        } catch (error) {
-            return [];
-        }
-    }
-
-    function saveClientes(clientes) {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(clientes));
-    }
-
-    function addCliente(cliente) {
-        var clientes = getClientes();
-        clientes.unshift(cliente);
-        saveClientes(clientes);
-        renderClientes();
-    }
-
-    function formatDate(iso) {
-        var date = new Date(iso);
-        return date.toLocaleDateString('es-CO', { day: '2-digit', month: 'short', year: 'numeric' });
-    }
-
-    function renderClientes() {
-        var tbody = document.querySelector('#clientes-table tbody');
-        var emptyMessage = document.querySelector('.table-empty');
-        if (!tbody || !emptyMessage) return;
-
-        var clientes = getClientes();
-        tbody.innerHTML = '';
-
-        if (!clientes.length) {
-            emptyMessage.style.display = 'block';
-            return;
-        }
-
-        emptyMessage.style.display = 'none';
-        clientes.slice(0, 30).forEach(function (cliente) {
-            var row = document.createElement('tr');
-            row.innerHTML = '<td>' + cliente.nombre + '</td>' +
-                '<td>' + cliente.email + '</td>' +
-                '<td>' + cliente.evento + '</td>' +
-                '<td>' + cliente.mensaje + '</td>' +
-                '<td>' + formatDate(cliente.fecha) + '</td>';
-            tbody.appendChild(row);
-        });
-    }
 
     function closeMenu() {
         if (!menuToggle || !menu) return;
@@ -103,8 +53,6 @@
                 fecha: new Date().toISOString()
             };
 
-            addCliente(cliente);
-
             var text = [
                 'Hola CHICHI TURBO, quiero cotizar un evento.',
                 '',
@@ -138,6 +86,5 @@
             element.classList.add('is-visible');
         });
     }
-
-    renderClientes();
 })();
+
